@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>000 회원가입</title>
+        <style>
+            #MS{
+                color:red;
+            }
+            #이름{font-weight: bold}
+            #성{font-weight: bold}
+            #이메일{font-weight: bold}
+            #비밀번호{font-weight: bold}
+            #out_line{border:solid 1px black;
+            width: 700px; height: 450px;
+            margin-left: auto;
+            margin-right: auto}
+            #in_line{
+            width: 400px; height: 450px;
+            margin-left: auto;
+            margin-right: auto} 
+            #in_line2{width: 360px;
+                margin-left: auto;
+            margin-right: auto}
+
+        </style>
+    </head>
+    <body align = "center">
+        <form>
+                <div id="out_line">
+                     <div id="in_line"  >
+                        <br>
+                        <div>회원가입</div>
+                        <h1>네이버에 오신걸 환영합니다!</h1>
+                    <div id="in_line2"align="left">
+                        <label for="이름" id="이름";>이름</label>
+                        <input name="이름" placeholder="영문으로 입력해주세요" type="text" value=""/><br><br>
+                        <label for="성"id="성">성</label>
+                        <input name="성" placeholder="영문으로 입력해주세요" type="text" value=""/><br><br>
+                        <label for="이메일" id="이메일">이메일</label>
+                        <input name="이메일" placeholder="영문,숫자로 입력해주세요" type="text" value=""/>       
+                                 <select>
+                                <option>선택</option>
+                                <option>www.naver.com</option>
+                                <option>www.google.com</option>
+                                </select><br><br>
+                        <label for="비밀번호" id="비밀번호">비밀번호</label>
+                        <input name="비밀번호" placeholder="영문,숫자,특수문자로 입력해주세요" type="text" value=""/><br><br>
+                    </div>
+                        <input type="submit" value="가입하기" />
+                        <p> 이미 계정이 있습니까?<a href="" target="_self">로그인하기</a></p><br><br><br>
+                        <div id="MS" >
+                                양식 입력중 오류가 발생할 시 여기에 메세지가 표시됩니다.</div>
+
+                     </div>
+                 </div>
+
+            
+
+        </form>
+
+
+    </body>
+
+</html>
