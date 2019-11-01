@@ -18,6 +18,9 @@
             header>ul>li:nth-child(5){
                 border: none /* li의 5번째꺼 없앤다는 뜻*/
             }
+            header{
+                margin: 30px;
+            }
             .clear{clear:both; height: 0; overflow: hidden;}
             .float_left{float:left;}
             .float_right{float:right;}
@@ -36,6 +39,7 @@
             }
             nav{
                 background-color: #cccccc;
+                padding: 30px;
             }
             nav>ul>li{
                 float: left; /* 둥둥떠다닌다 : 왼쪽기준*/
@@ -63,6 +67,56 @@
             .container:nth-child(4){
                 background-color: #ec5;
             }
+            .container{
+                padding: 30px;
+            }
+            .content_part{
+                float: left;
+                width:480px;
+                margin : 10px;
+            }
+            .container>section{
+                width:1000px;
+                margin-left: auto;/*바깥여백중에서도 왼쪽을 자동으로 하겠다는 뜻 */
+                margin-right: auto;
+            }
+            .container>section>h3{
+                color:white;
+            }
+            .container dt{
+                font-weight: bold;
+                margin-bottom: 25px;
+                margin-top: 25px;
+                margin:25px; /* 네 방향 모두*/
+                margin: 25px 0px; /* 상하  좌우 */
+                margin: 25px 0px 25px 0px; /* 상 우 하 좌*/
+            }
+            .container dd{
+                margin:0px
+            }
+            footer li{
+                float:left;
+                list-style: none; /*리스트모양(동그라미 등등) ; 없음 */
+                padding-right:10px;
+                
+            }
+            footer>div>ul>li:nth-child(6){
+                border: none /* li의 6번째꺼 없앤다는 뜻*/
+                }
+            footer ul{
+                padding: 0px;
+            }
+            footer{
+                background-color: #999;
+                padding: 30px;
+                }
+                #wrap{
+                    /* width;:1100px; 고정값*/
+                    min-width: 1100px;
+                    max-width: 1920px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
         </style>
     </head>
     <body>
@@ -125,6 +179,7 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
                     </section>
                 </div>
                 <div class="container">
@@ -154,6 +209,7 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
                     </section>
                 </div>
                 <div class="container">
@@ -183,6 +239,7 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
                     </section>
                 </div>
                 <div class="container">
@@ -212,10 +269,35 @@
                                     </dd>
                                 </dl>
                             </div>
+                            <div class="clear"></div>
                         </section>
                     </div>
             </div>
-            <footer>footer</footer>
+            <footer>
+                <div class="float_left">
+                    <ul>
+                     <li>Home</li>
+                     <li>About</li>
+                      <li>Services</li>
+                      <li>Work</li>
+                      <li>Blog</li>
+                      <li>Contact us</li>
+                      <div class="clear"></div>
+                    </ul>
+                    <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                    <div>the loges in the design are the property of their respective owners/copyright holders.</div>
+                 </div>
+                <ul class="float_right">
+                  <li><img src="images/layout1_footer_icon1.png"></li>
+                  <li><img src="images/layout1_footer_icon2.png"></li>
+                    <li><img src="images/layout1_footer_icon3.png"></li>
+                   <li><img src="images/layout1_footer_icon4.png"></li>
+                  <li><img src="images/layout1_footer_icon5.png"></li>
+                 <li><img src="images/layout1_footer_icon6.png"></li>
+                 <div class="clear"></div>
+              </ul>
+            <div class="clear"></div>
+            </footer>
         </div>
     </body>
 </html>
