@@ -4,9 +4,13 @@
         <title>레이아웃2</title>
         <meta charset="utf-8"/>
         <style>
+        body{
+            margin: 0px;
+        }
         header{
             background-color: #02918c;
             color: white;
+            padding: 10px;
           
         }
         header>nav>ul>li{
@@ -25,16 +29,86 @@
         .float_right{float:right;}
         
         #main_visual{
-            height:700px;
             background-image: url("images/layout2_visual.jpg");
-            background-size: 100% auto;/* 가로 세로*/
+            background-size: auto 100% ;/* 가로 세로*/
             background-size: cover;
             background-repeat: no-repeat;
             /* repeat, no-repeat, repeat-x, repeat-y */
             background-color: black;
-            background-position: 100% 0%;/* 가로 세로*/
+            background-position: 50% 50%;/* 가로 세로*/
+
+            color:white;/* 상속 */
+            text-align: center;
+            font-weight: bold;
+            padding: 200px 0px;
         }
+        #main_visual h2{
+            font-size: 60px;
+            font-weight:bold;
+            letter-spacing: 15px;/* 글자 간격 */
+            margin: 5px;
         
+
+        }
+        #visual_title_top{
+            font-size:30px;
+        }
+        #visual_title_bottom{
+            font-size:20px;
+        }
+        #main_visual img{
+            margin: 100px 0px 0px 0px;
+
+        }
+        section>h3{
+            color: #02918c;
+            font-size: 30px;
+            font-weight: bold;
+            margin:50px, 0px;
+        }
+        section{
+            text-align: center;
+            padding: 0px 100ox;
+        }
+        section>#about_list>li{
+            float:left;
+            width: 100px;/* 고정값 */
+            width:25%;/* 가변값 */
+            width:calc(25% - (1px /4 * 3) - 40px - 40px);/* 계산식 */
+            list-style: none;
+            border-right: solid 1px #cccccc;
+            padding: 40px;   
+        }
+        section p{
+            margin: 50px 0px;
+            padding: 0px 100px;
+        }
+        section #about_list{
+            padding: 0px 100px;
+        }
+        section dd{
+            margin: 30px 0px;
+        }
+        section>#about_list>li:nth-child(4){
+                border: none}
+        #work_list{
+           padding: 0px
+        }
+        #work_list img{
+            width: 100%;
+            display: block;
+        }
+        #work_list li{
+            float: left;
+            list-style: none;
+            width:25%;/* 가변값 */
+            
+        }
+        #wrap{
+            min-width: 900px;
+            max-width: 1980px;
+            margin-left: auto;
+            margin-right: auto;}
         </style>
     </head>
     <body>
@@ -55,11 +129,68 @@
                 </ul>
             </nav>
             <div class="clear"></div>
-          </header>
-
-          <div id="main_visual"></div>
-          <div>content1</div>
-          <div>content2</div>
-      </div>
+         </header>
+          <div id="main_visual">
+            <div id="visual_title_top">Lorem ipsum dolor sit iusmod tempor</div>
+            <h2>INCIDIDUNT BORE</h2>
+            <div id="visual_title_bottom">Orem ipsum dolor sit amet, consectetur</div>
+            <img src="images/layout2_button.jpg"/>
+        </div>
+          <section>
+              <h3 id=>ABOUT ME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat duis aute irure dolor.</p>
+                <ul id="about_list">
+                    <li>
+                        <img src="images/layout2_icon1.jpg">
+                        <dt>Title goes here</dt>
+                        <dd>onsectetur adipisicing elit,
+                            sedo eiusmod tempor incidiet
+                            dolorerserss eerhfre mag.</dd>
+                    </li>
+                    <li>
+                            <img src="images/layout2_icon2.jpg">
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit,
+                                sedo eiusmod tempor incidiet
+                                dolorerserss eerhfre mag.</dd>
+                    </li>
+                    <li>
+                            <img src="images/layout2_icon3.jpg">
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit,
+                                sedo eiusmod tempor incidiet
+                                dolorerserss eerhfre mag.</dd>
+                    </li>
+                    <li>
+                            <img src="images/layout2_icon4.jpg">
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit,
+                                sedo eiusmod tempor incidiet
+                                dolorerserss eerhfre mag.</dd>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+          </section>
+          <section>
+              <h3>MY WORK</h3>
+              <P>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.</P>
+                <ul id="work_list">
+                    <li><img src="images/layout2_pic1.jpg"></li>
+                    <li><img src="images/layout2_pic2.jpg"></li>
+                    <li><img src="images/layout2_pic3.jpg"></li>
+                    <li><img src="images/layout2_pic4.jpg"></li>
+                    <li><img src="images/layout2_pic5.jpg"></li>
+                    <li><img src="images/layout2_pic6.jpg"></li>
+                    <li><img src="images/layout2_pic7.jpg"></li>
+                    <li><img src="images/layout2_pic8.jpg"></li>
+                    <div class="clear"></div>
+                </ul>
+          </section>
+        </div>
     </body>
 </html>
