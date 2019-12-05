@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>심야식당</title>
+        <meta charset-”utf-8” />
+        <meta name=”author” contaent=”최상욱”/>
+        <style>
+            body{background-color: black;
+                color: white;}
+            .clear{clear:both; height: 0; overflow: hidden;}/* 이게 있어야 float클리어 실행 가능함 필수!!! */
+            .float_left{float:left;}
+            .float_right{float:right;}
+            
+            #main_visual{
+            background-image: url("shokudou/main2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* repeat, no-repeat, repeat-x, repeat-y */
+            background-color: black;
+            background-position: 50% 50%;/* 가로 세로*/
+            color:white;/* 상속 */
+            text-align: center;
+            padding: 400px 0px;}
+            #back{
+                background-image: url("shokudou/main2.jpg");
+            }
+
+            #main_visual h2{
+            font-size: 40px;
+            font-weight:bold;
+            letter-spacing: 15px;/* 글자 간격 */
+            margin: 5px;}
+
+            #visual_title_top{
+            font-size:30px;
+            }
+             #visual_title_bottom{
+            font-size:20px;}
+            
+            header{
+                background-color : #03023e;
+                text-align : center;
+            }
+            header>nav{
+                padding: 0px;
+                margin: 0px;
+                text-align : center;
+            }
+            header>nav>ul>li{
+                text-align: center;
+                float: left; /* 둥둥떠다닌다 : 왼쪽기준*/
+                list-style: none; /*리스트모양(동그라미 등등) ; 없음 */
+                margin: 0px;
+            }
+            #container1{
+            background-image: url("shokudou/섹션1.jpg");
+            background-size: cover;
+            text-align: center;
+            background-position: 40% 40%;/* 가로 세로*/
+            padding: 100px 0px;
+            }
+            #container1_list .card{
+            float: left;
+            }
+            #container2{
+            color: white;
+            }
+            .H_contants{
+                text-align : center;
+            }
+            section>h3{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin:0px, 0px;
+             }
+             #back{
+                 text-align :center;
+             }
+             .card{
+                background-color:black;
+                width: 200px;
+                list-style: none;
+            }
+            .card dd{
+                margin: 0px;
+                font-size: 10px;
+            }
+            .card dt{
+                font-weight: bold;
+            }
+            .info{
+                padding: 20px;
+                align : left;
+                }
+            .visual{
+            position: relative; /*관계형*/
+                }
+                
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="back"> 
+                    <header>
+                      <h1>
+                          <img src="shokudou/logo.png">
+                      </h1>
+                      <nav>
+                         <ul>
+                              <li>프로그램 소개</li>
+                              <li>회차소개</li>
+                              <li>레시피소개</li>
+                              <li>바로보기</li>
+                              <div class="clear"></div>
+                          </ul>
+                      </nav>
+                    </header>
+                  <div id="main_visual">
+                    <div id="visual_title_top">아시아 베스트셀러 원작 영화화</div>
+                    <h2>맛으로 엮어가는 늦은밤 우리 이야기</h2>
+                    <div id="visual_title_bottom">オリジナルドラマ『深夜食堂 -Tokyo Stories-』</div>
+                  </div>
+                 <div id="container1">
+                     <section>
+                     <h3>심야식당(深夜食堂)</h3>
+                      <p>《심야식당》은 아베 야로의 동명 원작 만화를 바탕으로 MBS에서 제작되어 MBS에서는<br>
+                          2009년 10월 9일부터 금요 나이트 극장 시간대에, TBS에서는 2009년 10월 14
+                          일부터 수요 심야 시간대에 방송된 드라마이다</p>
+                    </section>
+                    <div id="container1_list">
+                            <ul>
+                                <li class="card">
+                                        <div class="visual">
+                                            <img src="shokudou/리스트1.jpg"/>
+                                            </div>
+                                            <div class="info">
+                                                <dl>
+                                                    <dt>1회 탄맨</dt>
+                                                    <dd>
+                                                        <div class="time">23분</div>
+                                                        <p>설명 적기
+                                                        </p>
+                                                        <div>바로보기 버튼만들어랏</div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                 </li>
+                                 <li class="card">
+                                        <div class="visual">
+                                            <img src="shokudou/리스트1.jpg"/>
+                                            </div>
+                                            <div class="info">
+                                                <dl>
+                                                    <dt>1회 탄맨</dt>
+                                                    <dd>
+                                                        <div class="time">23분</div>
+                                                        <p>설명 적기
+                                                        </p>
+                                                        <div>바로보기 버튼만들어랏</div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                 </li>
+                            </ul>
+                        <div class="clear"></div>
+                        </div>
+                         </div>
+                    </div>
+                </div> 
+              </div>
+        </body>
+    <footer>
+
+    </footer>
+</html>

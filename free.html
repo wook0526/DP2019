@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>민수</title>
+        <meta charset="utf-8"/>
+        <style>
+            body {
+                margin: 0;
+                background-image: url("minsu/패턴.jpg");
+                font-family: "이롭게 바탕체"
+            }
+            .clear {
+                clear: both;
+                height: 0;
+                overflow: hidden;
+            } /* 이게 있어야 float클리어 실행 가능함 필수!!! */
+            .float_left {
+                float: left;
+            }
+            .float_right {
+                float: right;
+            }
+            #main_visual {
+                background-image: url("minsu/minsu1.jpg");
+                background-size: auto 100%; /* 가로 세로*/
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 100% 0; /* 가로 세로*/
+                color: black; /* 상속 */
+                font-weight: bold;
+                padding: 30px 20px 480px 30px;
+            }
+            #visual_title_top {
+                margin: 30px 0 0;
+                font-size: 40px;
+            }
+            #visual_title_bottom {
+                font-size: 20px;
+            }
+            nav > ul > li {
+                float: left; /* 둥둥떠다닌다 : 왼쪽기준*/
+                list-style: none; /*리스트모양(동그라미 등등) ; 없음 */
+                padding: 0 10px;
+                font-size: 20px;
+            }
+            .container {
+                padding: 30px;
+            }
+            .content_part {
+                float: left;
+                width: 480px;
+                margin: 10px;
+                text-align: center
+            }
+            .container > section {
+                width: 1200px;
+                margin-left: auto; /*바깥여백중에서도 왼쪽을 자동으로 하겠다는 뜻 */
+                margin-right: auto;
+                text-align: center
+            }
+            section {
+                text-align: center;
+            }
+            h3 {
+                font-size: 50px;
+                margin: 0;
+            }
+            h2 {
+                font-size: 40px;
+                font-style: oblique;
+            }
+            dt {
+                font-size: 20px;
+                margin: 20px 0;
+            }
+            dd {
+                margin: 0;
+            }
+            .card {
+                background-color: white;
+                width: 200px;
+                list-style: none;
+                border: solid 1px gray;
+                border: solid 1px gray;
+            }
+            .info {
+                padding: 20px;
+            }
+            .visual {
+                position: relative; /*관계형*/
+                background-color: black;
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                transition: all 0.3s ease-in-out;
+            }
+            .visual:hover {
+                transform: scale(1.2);
+                -webkit-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -o-transform: scale(1.5);
+            }
+            .visual img {
+                display: inline-block; /* 표시 : 인라인 블럭 */
+                display: block; /* 이 경우 소문자 pjgy 등을 표시할 밑공간 필요 밑에 블럭이 튀어나왔을때 쓰셈  */
+            }
+            #contant li {
+                float: left;
+                list-style: none;
+                margin: 10px;
+            }
+            #work_list {
+                padding: 0
+            }
+            #work_list img {
+                width: 100%;
+                display: block;
+            }
+            #work_list li {
+                float: left;
+                list-style: none;
+                width: 25%; /* 가변값 */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="main_visual">
+                <header>
+                    <nav class="float_right">
+                        <ul>
+                            <li>HOME</li>
+                            <li>PROFILE</li>
+                            <li>ALBUM</li>
+                            <li>MEDIA</li>
+                            <li>M/V</li>
+                            <div class="clear"></div>
+                        </ul>
+                    </nav>
+                    <div class="clear"></div>
+                </header>
+                <div>
+                    <div id="visual_title_top">우리의 문제인제 아님 내문제인지</div>
+                    <div id="visual_title_bottom">"민수는 혼란스럽다"中</div>
+                </div>
+            </div>
+            <div class="container">
+                <section>
+                    <h3>PROFILE</h3>
+                    <div>
+                        <img src="minsu/minsu4.jpg"/>
+                        <h2>민수(MINSU)</h2>
+                        <dl>
+                            <dt>한 번 들으면 잊을 수 없는 몽환적인 음색의 아티스트</dt>
+                            <dd>
+                                꿈꾸는 듯한 독특한 음색과 청초한 이미지로 대중의 이목을 단숨에 사로잡으며 폭발적인 러브콜을 받은 싱어송라이터.
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <section>
+                    <h3>ALBUM</h3>
+                    <div id="contant">
+                        <ul>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a1.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>괜히</dt>
+                                        <dd>
+                                            <p>“'괜히'라는 말에 마음을 숨겨보고 싶었다.”
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a2.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>I LIKE ME</dt>
+                                        <dd>
+                                            <p>"잠시 고민하더라도
+                                                                                                    나는 내가 원하는 걸 알아"
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a3.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>티내볼게</dt>
+                                        <dd>
+                                            <p>"조금 티 내볼게 쉽지 않겠지만"
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a4.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>그녀</dt>
+                                        <dd>
+                                            <p>"알지 내가 재미없는거 근데 어쩌겠어 이게 난데"
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a5.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>섬</dt>
+                                        <dd>
+                                            <p>"아무 걱정 없는 상태가 되면 좋겠어요"
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a6.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>꽃</dt>
+                                        <dd>
+                                            <p>"익숙해진 탓인지 버릇처럼 배인건지"
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a7.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>생일노래</dt>
+                                        <dd>
+                                            <p>"너의 생일에 노래할 수 있어 기뻐"
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a8.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>커다란</dt>
+                                        <dd>
+                                            <p>"눈치 못 챌 만큼 세심한 배려 같은 거"
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a9.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>ALONE</dt>
+                                        <dd>
+                                            <p>"혼자가 되고 싶던 게 아닌데"
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="visual">
+                                    <img src="minsu/a10.jpg"/>
+                                </div>
+                                <div class="info">
+                                    <dl>
+                                        <dt>춤</dt>
+                                        <dd>
+                                            <p>"잘 보이려고 하는 거 말고"
+                                            </p>
+                                            <div>
+                                                <a href="https://www.youtube.com/channel/UCDnqbjv0zR9Bs8go3Blaijg">PLAY MUSIC →</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <section>
+                    <h3>ON STAGE</h3>
+                    <div>
+                        <ul id="work_list">
+                                <li><img src="minsu/l1.jpg"></li>
+                                <li>
+                                    <video width="300" height="168" controls autoplay muted>
+                                        <source src="minsu/[온스테이지2.0]민수 - 괜히.mp4" ; type="video/mp4">
+                                    </video>
+                                </li>
+                            <li><img src="minsu/l2.jpg"></li>
+                            <li>
+                                    <video width="300" height="168" controls autoplay muted>
+                                        <source src="minsu/[온스테이지2.0]민수 - 민수는 혼란스럽다.mp4" ; type="video/mp4">
+                                    </video>
+                                </li>
+                            <li><img src="images/layout2_pic5.jpg"></li>
+                            <li><img src="minsu/l3.jpg"></li>
+                            <li>
+                                    <video width="300" height="168" controls autoplay muted>
+                                        <source src="minsu/[온스테이지2.0]민수 - 섬.mp4" ; type="video/mp4">
+                                    </video>
+                                </li>
+                            </li>
+                            <li><img src="images/layout2_pic8.jpg"></li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+    <footer></footer>
+</html>
